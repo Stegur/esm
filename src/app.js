@@ -1,4 +1,7 @@
-const { Game, readGameSaving, writeGameSaving } = require("./game");
+// const { Game, readGameSaving, writeGameSaving } = require("./game");
 
-const game = new Game();
-game.start();
+requirejs(["game"], function ({ Game }) {
+    
+    const game = new Game();
+    game.start();
+})

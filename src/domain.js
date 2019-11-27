@@ -1,9 +1,8 @@
-class Character {
-    constructor() {
-        console.log('Character imported');
+define(function (require, exports, module) {
+    class Character {
     }
-}
 
-module.exports = {
-    Character,
-}
+    module.exports = {
+        Character,
+    }
+});

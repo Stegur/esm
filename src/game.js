@@ -1,23 +1,26 @@
-const { Character } = require('./domain');
+define(function (require, exports, module) {
 
-class Game {
-    start() {
-        console.log('game started');
+    const { Character } = require('./domain');
+    
+    class Game {
+        start() {
+            console.log('game started');
+        }
     }
-}
 
-class GameSavingData {
-}
+    class GameSavingData {
+    }
 
-function readGameSaving() {
-}
+    function readGameSaving() {
+    }
 
-function writeGameSaving() {
-}
+    function writeGameSaving() {
+    }
 
 
-module.exports = {
-    Game,
-    readGameSaving,
-    writeGameSaving
-}
+    module.exports = {
+        Game,
+        readGameSaving,
+        writeGameSaving
+    }
+})
